@@ -1,22 +1,145 @@
 <!DOCTYPE html>
-<html lang = "en">
 
+<html lang="en">
 <head>
-    <title>Angle Cars of Oundle - Homepage</title>
+  <title>AngleofOundle-AngleCars-Homepage</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+    .bg-1 { 
+      background-color: #0099ff; 
+      color: #ffffff;
+    }
+    .bg-2 {
+      background-color: #ffffff; 
+      color: #0099ff;
+    }
+    .bg-3 {
+      background-color: #800000; 
+      color: #ffffff;
+    }
+
+    .bg-4 {
+      background-color: #004080; 
+      color: #ffffff;
+    }
+
+    .bg-navbar {
+      background-color: #004080; 
+      color: #ffffff;
+      padding: 10px 0;
+    }
+
+    .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    .navbar-custom {
+      background-color: #004080; 
+      border-color: transparent;
+    }
+    
+    .navbar-custom .navbar-nav > li > a {
+      color: white;
+      font-size: 16px;
+    }
+
+    .circle-img {
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+    }
+
+    marquee {
+			display: block;
+			font-size: 24px;
+			color: white;
+			background-color: #000000;
+			border: 2px solid #d16b04;
+			padding: 10px;
+			width: 900px;
+			margin: 20px auto;
+			text-align: center;
+			}
+
+    p {
+      font-size: 30px;
+    }
+
+  </style>
+
+  <script>
+    function showMessage(message) {
+      alert(message);
+    }
+  </script>
 
 </head>
 <body>
 
-    <div class="container-fluid bg-1 text-center">
-      <img src="angel_logo_new.jpg" class="img-responsive" style="display:inline" alt="AngleInf" width="635" height="86">
+  <nav class="navbar navbar-inverse navbar-custom">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a style="font-size:60px" class="navbar-brand" href="#" style="color: white;">Angle of Oundle</a>
+        <img src="OS_badge.jpg" class="img-responsive img-circle circle-img" style="display:inline" alt="OundleLOGO" width="200" height="200">
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#" onclick="showMessage('Redirecting to Homepage')">
+          <span class="glyphicon glyphicon-home"></span>Home</a></li>
+        <li><a href="#" onclick="showMessage('Redirecting to Services page')">
+          <span class="glyphicon glyphicon-tags"></span>Services</a></li>
+        <li><a href="#" onclick="showMessage('Redirecting to Contact information')">
+          <span class="glyphicon glyphicon-phone-alt"></span>Contact</a></li>
+        <li><a href="#" onclick="showMessage('Redirecting to information about us')">
+          <span class="glyphicon glyphicon-user"></span>About Us</a></li>
+      </ul>
     </div>
-    
-    
-</body>
+  </nav>
 
+  
+  <div class="container-fluid bg-1 text-center">
+    <img src="AngelOundle.jpg" class="img-responsive" style="display:inline" alt="AngleInf" width="635" height="86"><br>
+    <h3>Private Hire & Minibus Service from 4 to 26 seats.</h3>
+    <h3>Distance no object.</h3>
+    <img src="oundleschool0001.jpg" class="img-responsive img-circle circle-img" style="display:inline" alt="Logo"><br>
+  </div>
+  
+
+  <div class="container-fluid bg-2 text-center">
+    <h3>Welcome to Our Service</h3>
+    <p>Please search</p>
+    <a href="#" class="btn btn-default btn-lg" onclick="showMessage('Please search')">
+      <span class="glyphicon glyphicon-search"></span> Search
+    </a>
+    <br>
+    <marquee> UPDATE TO OUR SERVICES, WE NOW RUN MORE OFTEN OR SOMETHING LIKE THAT I RAN OUT OF THINGS TO IMPROVE IG </marquee>
+  </div>
+
+
+  <div class="container-fluid bg-3 text-center">    
+    <h3>Details of services</h3><br>
+    <div class="row">
+      <div class="col-sm-4">
+        <p>We have buses.</p>
+        <img src="bus.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-4"> 
+        <p>Multiple vehicles that are very dynamic to work with you.</p>
+        <img src="three_cars.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-4"> 
+        <p>Train pickup available.</p>
+        <img src="train.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-4 text-center">  
+
+</body>
 </html>
