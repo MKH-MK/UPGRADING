@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+
   <style>
     .bg-1 { 
       background-color: #0099ff; 
@@ -86,17 +86,17 @@
     <div class="container-fluid">
       <div class="navbar-header">
         <a style="font-size:60px" class="navbar-brand" href="#" style="color: white;">Angle of Oundle</a>
-        <img src="OS_badge.jpg" class="img-responsive img-circle circle-img" style="display:inline" alt="OundleLOGO" width="200" height="200">
+        <img src="OS_badge.jpg" class="img-responsive img-circle circle-img" style="display:inline" alt="OundleLOGO" width="300" height="300">
       </div>
       <ul class="nav navbar-nav">
         <li><a href="#" onclick="showMessage('Redirecting to Homepage')">
-          <span class="glyphicon glyphicon-home"></span>Home</a></li>
+          <span class="glyphicon glyphicon-home"></span> Home</a></li>
         <li><a href="#" onclick="showMessage('Redirecting to Services page')">
-          <span class="glyphicon glyphicon-tags"></span>Services</a></li>
+          <span class="glyphicon glyphicon-tags"></span> Services</a></li>
         <li><a href="#" onclick="showMessage('Redirecting to Contact information')">
-          <span class="glyphicon glyphicon-phone-alt"></span>Contact</a></li>
+          <span class="glyphicon glyphicon-phone-alt"></span> Contact</a></li>
         <li><a href="#" onclick="showMessage('Redirecting to information about us')">
-          <span class="glyphicon glyphicon-user"></span>About Us</a></li>
+          <span class="glyphicon glyphicon-user"></span> About Us</a></li>
       </ul>
     </div>
   </nav>
@@ -140,6 +140,11 @@
   </div>
 
   <div class="container-fluid bg-4 text-center">  
+    <p class="text-center">&copy; 2000-<span id="year"></span> MKH</p>
 
+
+    <script>
+      document.getElementById("year").textContent=new Date().getFullYear();
+    </script>
 </body>
 </html>
